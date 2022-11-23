@@ -534,7 +534,8 @@ header{
     color: #fff;
     padding-bottom: 1.5625vw  /* 30/19.2 */;
 }
-.section-title-block .section-title{
+.about-block .section-title-block .section-title,
+.service-block .section-title-block .section-title{
     font-size: 5.833vw  /* 112/19.2 */;
     line-height: 5.99vw  /* 115/19.2 */;
 }
@@ -1203,6 +1204,7 @@ footer .copyrights i{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     z-index: -1;
 }
 /* About */
@@ -1218,6 +1220,81 @@ footer .copyrights i{
 }
 .about-block .flex-lg-row-reverse .section-title{
     text-align: end;
+}
+/* Services */
+.service-block{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+.service-block .bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+
+}
+.service-block .bg-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    mix-blend-mode: luminosity;
+}
+.service-description{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 13.542vw  /* 260/19.2 */ 0;
+    z-index: 1;
+}
+.service-description.light{
+    background: var(--color-light);
+    color: var(--color-primary);
+}
+.service-description .service-icon{
+    display: block;
+    width: 100%;
+    max-width: 80%;
+    margin: 20px auto;
+}
+.service-description .service-icon img{
+    width: auto;
+    max-width: 100%;
+}
+.service-description ul.list-items{
+    position: relative;
+    display: block;
+}
+.service-description ul.list-items li{
+    position: relative;
+    display: block;
+    font-weight: normal;
+    font-size: 1.71875vw  /* 33/19.2 */;
+    line-height: 2.292vw  /* 44/19.2 */;
+    letter-spacing: -0.02em;
+}
+.service-description ul.list-items li:before{
+    content: '';
+    position: absolute;
+    top: 0.9vw;
+    left: -1.3vw;
+    width: 0.521vw  /* 10/19.2 */;
+    height: 0.573vw  /* 11/19.2 */;
+    background: #fff;
 }
 /* Responsive*/
 @media screen and (min-width: 1200px) {
