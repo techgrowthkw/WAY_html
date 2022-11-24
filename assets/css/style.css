@@ -296,7 +296,11 @@ header{
     letter-spacing: -0.03em;
     line-height: 1.2;
     color: #fff;
+    text-decoration: none !important;
     transition: var(--transition);
+}
+.side-wrapper ul.side-menu li a:hover{
+    opacity: 0.5;
 }
 .side-wrapper .switch-language{
     position: absolute;
@@ -1296,6 +1300,170 @@ footer .copyrights i{
     height: 0.573vw  /* 11/19.2 */;
     background: #fff;
 }
+/* Media */
+.media-title-block{
+    position: relative;
+    display: block;
+    margin-top: 4.6875vw  /* 90/19.2 */;
+}
+.media-title-block > div{
+    position: relative;
+    display: inline-block;
+    padding-top: 1.25vw  /* 24/19.2 */;
+}
+.media-title-block .media-subtitle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    color: var(--color-secondary);
+    text-align: end;
+}
+.media-title-block .media-subtitle span{
+    display: inline-block;
+    background: #fff;
+    padding-left: 0.625vw  /* 12/19.2 */;
+    z-index: 1;
+}
+.media-title-block .media-subtitle:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.15625vw  /* 3/19.2 */;
+    background: var(--color-secondary);
+    z-index: -1;
+}
+.media-title-block .media-title{
+    position: relative;
+    display: block;
+    font-weight: 600;
+    font-size: 2.292vw  /* 44/19.2 */;
+    letter-spacing: -0.05em;
+    color: var(--color-primary);
+}
+.media-tabs .nav-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    margin: 3.125vw  /* 60/19.2 */ auto;
+}
+.media-tabs .nav-tabs .divider {
+    padding: 0 1.5625vw  /* 30/19.2 */;
+}
+.media-tabs .nav-tabs .nav-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 1.302vw  /* 25/19.2 */;
+    letter-spacing: -0.05em;
+    background: none !important;
+    border: none !important;
+    color: var(--color-primary) !important;
+    padding: 0.5vw 0;
+}
+.media-tabs .nav-tabs .nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.104vw  /* 2/19.2 */;
+    background: var(--color-secondary);
+    transition: var(--transition);
+}
+.media-tabs .nav-tabs .nav-item.show .nav-link:before,
+.media-tabs .nav-tabs .nav-link.active:before,
+.media-tabs .nav-tabs .nav-link:hover:before {
+    width: 100%;
+}
+.gallery-wrapper{
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 3.125vw  /* 60/19.2 */;
+}
+.gallery-wrapper .gallery-col{
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.gallery-wrapper .gallery-col-1{
+    width: 25%;
+}
+.gallery-wrapper .gallery-col-2{
+    width: 50%;
+}
+.gallery-wrapper .gallery-col-3{
+    width: 100%;
+}
+.gallery-wrapper .gallery-item{
+    position: relative;
+    display: inline-block;
+    width: calc(100% - 1.042vw  /* 20/19.2 */);
+    height: 18.073vw  /* 347/19.2 */;
+    margin: 0.521vw  /* 10/19.2 */ auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.gallery-wrapper .gallery-item.height-2{
+    height: 37.1875vw  /* 714/19.2 */;
+}
+.gallery-wrapper .gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.gallery-wrapper .gallery-item .album-info{
+    position: absolute;
+    top: 1.25vw  /* 24/19.2 */;
+    left: 0;
+    background: var(--color-primary);
+    color: #fff;
+    padding: 0.521vw  /* 10/19.2 */ 1.5625vw  /* 30/19.2 */;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: var(--transition);
+    z-index: 1;
+}
+.gallery-wrapper .gallery-item .album-info:hover{
+    color: var(--color-primary);
+}
+.gallery-wrapper .gallery-item .album-info:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #fff;
+    transition: var(--transition);
+    z-index: -1;
+}
+.gallery-wrapper .gallery-item .album-info:hover:before{
+    width: 100%;
+}
+.gallery-wrapper .gallery-item .album-info .album-photos{
+    display: block;
+    font-size: 0.9375vw  /* 18/19.2 */;
+}
+.gallery-wrapper .gallery-item .album-info .album-title{
+    display: block;
+    font-size: 1.354vw  /* 26/19.2 */;
+    text-transform: uppercase;
+}
+
+/*.media-*/
 /* Responsive*/
 @media screen and (min-width: 1200px) {
     .container-fluid{
