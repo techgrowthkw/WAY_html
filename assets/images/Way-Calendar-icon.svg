@@ -1,0 +1,13 @@
+<svg id="Way-Calendar-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="21" viewBox="0 0 21 21">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_30" data-name="Ellipse 30" cx="7.5" cy="7.5" r="7.5" transform="translate(646.166 759.166)" fill="#1d1d1b"/>
+    </clipPath>
+  </defs>
+  <circle id="Ellipse_29" data-name="Ellipse 29" cx="10.5" cy="10.5" r="10.5" fill="#1d1d1b"/>
+  <g id="Mask_Group_21" data-name="Mask Group 21" transform="translate(-643.166 -757.166)" clip-path="url(#clip-path)">
+    <g id="Way-News-Calendar-Icon" transform="translate(648.406 762.31)">
+      <path id="Icon_awesome-calendar" data-name="Icon awesome-calendar" d="M.282,4.508h9.956a.283.283,0,0,1,.282.282V10.9a1.127,1.127,0,0,1-1.127,1.127H1.127A1.127,1.127,0,0,1,0,10.9V4.79A.283.283,0,0,1,.282,4.508ZM10.519,3.475V2.63A1.127,1.127,0,0,0,9.392,1.5H8.265V.282A.283.283,0,0,0,7.983,0H7.044a.283.283,0,0,0-.282.282V1.5H3.757V.282A.283.283,0,0,0,3.475,0H2.536a.283.283,0,0,0-.282.282V1.5H1.127A1.127,1.127,0,0,0,0,2.63v.845a.283.283,0,0,0,.282.282h9.956A.283.283,0,0,0,10.519,3.475Z" fill="#fffefa"/>
+    </g>
+  </g>
+</svg>
