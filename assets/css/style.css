@@ -3,6 +3,8 @@
     --color-primary: #1D1D1B;
     --color-secondary: #FE0000;
     --color-light: #fffefa;
+    --font-english: 'Poppins';
+    --font-arabic: 'GE SS Two';
     --transition: all 0.5s ease-in-out;
     --scrollProgress: 0;
 }
@@ -15,9 +17,9 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #fff;
+    background-color: var(--color-light);
     color: var(--color-primary);
-    font-family: 'Poppins', 'Beyond Infinity - Demo', 'iCiel Gotham' , Arial,sans-serif;
+    font-family: 'Poppins', 'Beyond Infinity - Demo', 'iCiel Gotham' , 'GE SS Two' , Arial,sans-serif;
     position: relative;
     width: 100%;
     padding-top: 80px;
@@ -81,6 +83,27 @@ body{
     font-family: 'iCiel Gotham';
     src: url('../fonts/iCielGothamBold.ttf');
     font-weight: normal;
+}
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../fonts/GE_SS_Two_Light.otf');
+    font-weight: 300
+}
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../fonts/GE_SS_Two_Medium.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'GE SS Two';
+    src: url('../fonts/GE_SS_Two_Bold.otf');
+    font-weight: 700
+}
+.font-english{
+    font-family: var(--font-english);
+}
+.font-arabic{
+    font-family: var(--font-arabic);
 }
 * {
     box-sizing: border-box;
@@ -928,7 +951,7 @@ section .read-more.dark img{
     background: var(--color-light);
     padding: 4.167vw  /* 80/19.2 */ 0 7.292vw  /* 140/19.2 */;
 }
-.testimonials-slider .client-item{
+.clients-wrapper .client-item{
     position: relative;
     display: block;
     background: var(--color-primary);
@@ -937,7 +960,11 @@ section .read-more.dark img{
     padding: 5.521vw  /* 106/19.2 */ 10.833vw  /* 208/19.2 */;
     margin: 7.292vw  /* 140/19.2 */ auto;
 }
-.testimonials-slider .client-item:after{
+.clients-wrapper .client-item.light{
+    background: #F5F5F5;
+    color: var(--color-primary);
+}
+.clients-wrapper .client-item:after{
     content: ',,';
     position: absolute;
     bottom: -3vw;
@@ -945,22 +972,36 @@ section .read-more.dark img{
     font-weight: 500;
     font-size: 19.271vw  /* 370/19.2 */;
     line-height: 1;
-    transform: rotateY(180deg);
     color: var(--color-secondary);
+    transform: rotateY(180deg);
     opacity: 0.6;
 }
-.testimonials-slider .client-item .client-title{
+.clients-wrapper .client-item.light:after{
+    left: auto;
+    right: 1.875vw  /* 36/19.2 */;
+    transform: none;
+}
+.clients-wrapper .client-item .client-title{
     position: absolute;
     top: 1.5625vw  /* 30/19.2 */;
     right: 4.167vw  /* 80/19.2 */;
     font-weight: bold;
     font-size: 1.042vw  /* 20/19.2 */;
     text-align: end;
-}
-.testimonials-slider .client-item .client-title div{
     color: var(--color-secondary);
 }
-.testimonials-slider .client-item .client-title:before{
+.clients-wrapper .client-item.light .client-title{
+    right: auto;
+    left: 4.167vw  /* 80/19.2 */;
+    text-align: start;
+}
+.clients-wrapper .client-item .client-title div{
+    color: #fff;
+}
+.clients-wrapper .client-item.light .client-title div{
+    color: var(--color-primary);
+}
+.clients-wrapper .client-item .client-title:before{
     content: '';
     position: absolute;
     top: 50%;
@@ -970,10 +1011,16 @@ section .read-more.dark img{
     height: 3.4375vw  /* 66/19.2 */;
     background: #fff;
 }
-.testimonials-slider .client-item .client-text{
+.clients-wrapper .client-item.light .client-title:before{
+    right: auto;
+    left: -1.146vw  /* -22/19.2 */;
+    background: var(--color-secondary);
+}
+.clients-wrapper .client-item .client-text{
     display: block;
     font-weight: 500;
     font-size: 1.042vw  /* 20/19.2 */;
+    margin-top: 1vw;
     text-align: center;
 }
 /* Owl */
@@ -1698,6 +1745,11 @@ footer .copyrights i{
     margin-left: 6px;
 }
 /* Article */
+.article-wrapper{
+    position: relative;
+    display: block;
+    margin: 16px auto;
+}
 .article-wrapper .article-img{
     display: block;
     width: 100%;
@@ -1855,6 +1907,8 @@ footer .copyrights i{
     border-color: var(--color-primary);
     color: var(--color-primary);
 }
+/* Clients */
+
 /* Responsive*/
 @media screen and (min-width: 1200px) {
     .container-fluid{
