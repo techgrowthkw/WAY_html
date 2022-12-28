@@ -1240,6 +1240,9 @@ footer .copyrights i{
     height: 15.833vw  /* 304/19.2 */;
     z-index: 1;
 }
+.page-header.contact-header{
+    height: 20.3125vw  /* 390/19.2 */;
+}
 .page-header .page-title{
     display: block;
     font-weight: bold;
