@@ -71,5 +71,3 @@ $(document).ready(function(){
     );
     wow.init()
 });
-// Year
-// document.getElementById("year").innerHTML=(new Date).getFullYear()

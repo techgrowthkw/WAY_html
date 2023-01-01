@@ -1,0 +1,11 @@
+<svg id="Way-Pone-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_418" data-name="Rectangle 418" width="80" height="80" fill="#1d1d1b"/>
+    </clipPath>
+  </defs>
+  <g id="Group_426" data-name="Group 426" clip-path="url(#clip-path)">
+    <path id="Path_441" data-name="Path 441" d="M22.237,22.2H17.2a2.776,2.776,0,0,0,0,5.551h5.042a2.776,2.776,0,0,0,0-5.551" transform="translate(20.369 31.363)" fill="#1d1d1b"/>
+    <path id="Path_442" data-name="Path 442" d="M40,0A40,40,0,1,0,80,40,40,40,0,0,0,40,0M56.121,50.184v7.691a5.782,5.782,0,0,1-5.783,5.783h-20.5a5.782,5.782,0,0,1-5.783-5.783V22.125a5.782,5.782,0,0,1,5.783-5.783h20.5a5.782,5.782,0,0,1,5.783,5.783Z" transform="translate(0 0)" fill="#1d1d1b"/>
+  </g>
+</svg>

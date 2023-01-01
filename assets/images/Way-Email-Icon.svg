@@ -1,0 +1,10 @@
+<svg id="Way-Email-Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_417" data-name="Rectangle 417" width="80" height="80" fill="#1d1d1b"/>
+    </clipPath>
+  </defs>
+  <g id="Group_424" data-name="Group 424" clip-path="url(#clip-path)">
+    <path id="ico_email" data-name="ico email" d="M40,0A40,40,0,1,0,80,40,40,40,0,0,0,40,0M22.113,21.992H57.858a5.536,5.536,0,0,1,1.423.191c-.063.058-.128.109-.186.171L43.121,40.481a4.176,4.176,0,0,1-6.268,0L20.718,22.175a5.538,5.538,0,0,1,1.394-.183m41.282,26.3A9.711,9.711,0,0,1,53.682,58H26.318a9.711,9.711,0,0,1-9.713-9.71V27.514a5.489,5.489,0,0,1,.446-2.174L33.225,43.692a9.033,9.033,0,0,0,13.551,0L62.753,25.565a2.562,2.562,0,0,0,.181-.253,5.5,5.5,0,0,1,.461,2.2Z" transform="translate(0 0)" fill="#1d1d1b"/>
+  </g>
+</svg>

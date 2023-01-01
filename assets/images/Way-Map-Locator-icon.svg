@@ -1,0 +1,11 @@
+<svg id="Way-Map-Locator-icon" xmlns="http://www.w3.org/2000/svg" width="43.689" height="58.249" viewBox="0 0 43.689 58.249">
+  <path id="Path_679" data-name="Path 679" d="M-179.816,143.1a21.546,21.546,0,0,1-1.583,7.189,68.681,68.681,0,0,1-7.79,14.333c-3.082,4.492-6.39,8.828-9.572,13.252a3.456,3.456,0,0,1-5.837.021q-3.12-4.124-6.174-8.3a112.532,112.532,0,0,1-9.025-14.431c-1.911-3.683-3.523-7.519-3.7-11.728a21.38,21.38,0,0,1,.612-5.637,20.872,20.872,0,0,1,9.306-13.121,21.5,21.5,0,0,1,10.06-3.357,22.094,22.094,0,0,1,10.893,1.836,21.469,21.469,0,0,1,9.581,8.391A22.279,22.279,0,0,1-179.816,143.1Z" transform="translate(223.505 -121.245)"/>
+  <g id="Group_893" data-name="Group 893" transform="translate(4.679 16.903)">
+    <path id="Path_680" data-name="Path 680" d="M-143,332.633l-1.982,6.145-2.037-6.173h-2.119l-2.037,6.173-1.977-6.145h-2.843l3.7,10.7h2.138l2.047-5.987,2.047,5.987h2.152l3.692-10.7Z" transform="translate(155.991 -332.606)" fill="#fffefa"/>
+    <path id="Path_681" data-name="Path 681" d="M-115.644,343.367l-4.675-10.7h-2.193l-4.676,10.7h2.771l1-2.341h3.963l.983,2.341Zm-4.837-4.789H-122.4l.953-2.222Z" transform="translate(141.26 -332.635)" fill="#fffefa"/>
+    <path id="Path_682" data-name="Path 682" d="M-100.48,332.806l-2.483,3.875-2.443-3.875h-3.149l4.25,6.482v4.153h2.656v-4.194l4.251-6.441Z" transform="translate(131.731 -332.708)" fill="#fffefa"/>
+    <rect id="Rectangle_701" data-name="Rectangle 701" width="1.325" height="1.325" transform="translate(28.731 11.479)" fill="#fe0000"/>
+    <rect id="Rectangle_702" data-name="Rectangle 702" width="4.656" height="1.325" transform="translate(22.758 11.479)" fill="#fe0000"/>
+    <rect id="Rectangle_703" data-name="Rectangle 703" width="7.49" height="1.325" transform="translate(13.96 11.479)" fill="#fe0000"/>
+  </g>
+</svg>
