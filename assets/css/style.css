@@ -557,7 +557,7 @@ section .read-more.dark img{
 /* Section title*/
 .section-title-block{
     position: relative;
-    display: block;
+    display: inline-block;
 }
 .section-title-block.center{
     text-align: center;
@@ -2061,13 +2061,20 @@ footer .copyrights i{
     width: 100%;
     background: var(--color-primary);
     color: #fff;
-    padding: 250px 0;
+    padding: 11.979vw  /* 230/19.2 */ 0;
+}
+.form-wrapper.login-page{
+    padding-top: 5.99vw  /* 115/19.2 */;
 }
 .form-wrapper .form-title{
     display: block;
     font-weight: 500;
     font-size: 1.875vw  /* 36/19.2 */;
     margin-bottom: 10px;
+}
+.form-wrapper.login-page .form-title{
+    font-size: 2.083vw  /* 40/19.2 */;
+    letter-spacing: -0.04em;
 }
 .form-wrapper .form-text{
     display: block;
@@ -2096,8 +2103,8 @@ footer .copyrights i{
     border-color: #fff;
     background-color: #fff;
 }
-.form-wrapper .btn-send{
-    display: flex;
+.form-wrapper .btn{
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     min-width: 186px;
@@ -2110,7 +2117,13 @@ footer .copyrights i{
     text-align: center;
     color: var(--color-primary);
 }
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+.form-wrapper .forget-password{
+    color: var(--color-secondary);
+}
+.form-wrapper .custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+}
+.form-wrapper .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
     filter: brightness(0) invert(0);
 }
 /* Responsive*/
