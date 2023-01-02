@@ -2274,6 +2274,154 @@ ul.time-slots li button.active{
 ul.time-slots li button.disabled{
     opacity: 0.4;
 }
+/* Payment */
+.payment-wrapper{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 115px;
+    z-index: 1;
+}
+.payment-wrapper:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 480px;
+    background: var(--color-primary);
+    z-index: -1;
+}
+.payment-wrapper .payment-container{
+    display: block;
+    width: 100%;
+    border-radius: 40px;
+    background: var(--color-light);
+    box-shadow: -4px 5px 6px rgba(0, 0, 0, 0.15);
+    padding: 4.167vw  /* 80/19.2 */;
+}
+.payment-wrapper .payment-container .info-block,
+.payment-wrapper .payment-container .invoice-block,
+.payment-wrapper .payment-container .payment-block{
+    display: inline-block;
+    width: 100%;
+    background: #fffefa;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+    margin: 0 auto 10px;
+}
+.payment-wrapper .payment-container .info-block{
+    max-width: 469px;
+    padding: 4.167vw  /* 80/19.2 */ 2.083vw  /* 40/19.2 */;
+}
+.payment-wrapper .payment-container .info-block .logo-slogan{
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+.payment-wrapper .payment-container .info-block .logo-slogan img{
+    width: auto;
+    max-width: 100%;
+}
+.payment-wrapper .payment-container .info-block ul.info-list{
+    display: block;
+    width: 100%;
+    margin: 40px auto;
+}
+.payment-wrapper .payment-container .info-block ul.info-list li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+.payment-wrapper .payment-container .info-block ul.info-list li .info-icon{
+    display: inline-block;
+    min-width: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+.payment-wrapper .payment-container .info-block ul.info-list li .info-icon img{
+    width: 100%;
+    object-fit: contain;
+}
+.payment-wrapper .payment-container .info-block ul.info-list li .info-title{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    color: var(--color-primary);
+    margin: 1px 0;
+}
+.payment-wrapper .payment-container .info-block ul.info-list li .info-text{
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    color: var(--color-primary);
+    opacity: 0.5;
+    margin: 1px 0;
+}
+.payment-wrapper .payment-container .invoice-block .invoice-amount-text{
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: var(--color-primary);
+    opacity: 0.7;
+    margin-top: 30px;
+}
+.payment-wrapper .payment-container .invoice-block .invoice-amount-price{
+    display: block;
+    font-weight: 500;
+    font-size: 37px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: var(--color-primary);
+}
+.payment-wrapper .payment-container .invoice-block .invoice-expire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    background: var(--color-primary);
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    margin-top: 15px;
+}
+h1 {
+    font-family: sans-serif;
+    margin: 100px auto;
+    color: #228B22;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+}
+h1:before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: #191970;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+h1:after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 5px;
+    background: #191970;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
 /* Responsive*/
 @media screen and (min-width: 1200px) {
     .container-fluid{
