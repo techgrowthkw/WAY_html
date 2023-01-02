@@ -57,6 +57,11 @@ $(document).ready(function () {
         $(".book-btns").toggleClass("active");
     })
 })
+// Time slots
+$("ul.time-slots li button:not(:disabled)").click(function () {
+    $("ul.time-slots li button").removeClass("active")
+    $(this).addClass("active")
+})
 // WOW =====================
 $(document).ready(function(){
     wow = new WOW
