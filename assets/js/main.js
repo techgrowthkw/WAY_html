@@ -40,6 +40,7 @@ $(document).ready(function() {
         dots: true,
         nav: false,
         margin: 0,
+        stagePadding: 0,
         responsive:{
             0:{
                 items:1,

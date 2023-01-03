@@ -15,7 +15,7 @@
 <body>
 <!-- Header -->
 <header>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.svg" alt="WAY">
@@ -189,9 +189,75 @@
                     </div>
                     <div class="payment-block">
                         <div class="how-to-pay">How would you like to pay?</div>
-                        <h1>Pay With</h1>
+                        <div class="payment-title"><span>Pay With</span></div>
+                        <div class="select-payment">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">
+                                    <div class="payment-img">
+                                        <img src="assets/images/Way-Knet-icon.svg" alt="">
+                                    </div>
+                                    KNET
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">
+                                    <div class="payment-img">
+                                        <img src="assets/images/Way-Visa-card-icon.svg" alt="">
+                                    </div>
+                                    Visa / Master Card
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="payment-title"><span>Insert Card Details</span></div>
+                        <div class="card-details">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Card Holder Name">
+                            </div>
+                            <div class="form-group position-relative">
+                                <input type="text" maxlength="16" class="form-control" placeholder="Card Number">
+                                <img src="assets/images/Way-Master-card-icon.svg" alt="">
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group align-items-center">
+                                            <input type="text" class="form-control" maxlength="2" placeholder="MM">
+                                            <span class="px-1">/</span>
+                                            <input type="text" class="form-control" maxlength="2" placeholder="YY">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" class="form-control" maxlength="3" placeholder="CVV">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-payment">Pay Now</button>
+                        <div class="package-details-block">
+                            <div>
+                                <span class="">Package Amount</span>
+                                <span class="">Package Name</span>
+                            </div>
+                            <div>
+                                <span class="">Platinum</span>
+                                <span class="">90.000 KD</span>
+                            </div>
+                            <div>
+                                <span class="">Total</span>
+                                <span class="">90.000 KD</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="my-fatoorah">
+            <img src="assets/images/Image%205.svg" alt="">
+            <div>
+                A hassle-free online payment service that enhances your business and take it to the next level.
             </div>
         </div>
     </div>
