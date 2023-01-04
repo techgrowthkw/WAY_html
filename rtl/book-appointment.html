@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title>Book An Appointment | WAY</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon.png"><!-- Favicon -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/animate.css"><!-- Animate.css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css"><!-- Fontawesome -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css" type="text/css"><!-- Owl -->
+    <link rel="stylesheet" href="../assets/css/owl.theme.default.min.css" type="text/css"><!-- Owl -->
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css" type="text/css"><!-- jquery-ui -->
+    <link rel="stylesheet" href="../assets/css/jquery-ui.theme.min.css" type="text/css"><!-- jquery-ui -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="stylesheet" media="all" href="../assets/css/style.css">
+    <link rel="stylesheet" media="all" href="../assets/css/style-rtl.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <nav class="navbar navbar-expand fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../assets/images/logo.svg" alt="WAY">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div class="input-group search-group">
+                            <input type="text" name="search" value="Search..">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="toggle-menu" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Sidebar -->
+    <aside class="side-wrapper">
+        <div class="container-fluid h-100">
+            <div class="row h-100 align-items-center position-relative">
+                <div class="col-12">
+                    <ul class="side-menu">
+                        <li class="">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="">
+                            <a href="services.html">Services</a>
+                        </li>
+                        <li class="">
+                            <a href="media.html">Media</a>
+                        </li>
+                        <li class="">
+                            <a href="news.html">News</a>
+                        </li>
+                        <li class="">
+                            <a href="clients.html">Our Clients</a>
+                        </li>
+                        <li class="">
+                            <a href="ceo.html">Athoub al Twaim</a>
+                        </li>
+                        <li class="">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="switch-language">
+                    <a href="book-appointment.html" class="font-ar active">العربية</a>
+                    <a href="../book-appointment.html" class="font-en ">ENG</a>
+                </div>
+            </div>
+        </div>
+        <div class="way-letters">
+            <img src="../assets/images/w.svg" alt="W">
+            <img src="../assets/images/A.svg" alt="A">
+            <img src="../assets/images/y.svg" alt="Y">
+        </div>
+    </aside>
+</header>
+<!-- Content -->
+<div class="form-wrapper booking-page">
+    <div class="container-fluid">
+        <div class="form-title text-center">Book An Appointment</div>
+
+        <div class="row justify-content-between">
+            <div class="col-12 col-lg-4">
+                <div class="select-date-time">Select Date & Time</div>
+                <div id="datepicker"></div>
+                <div class="select-date-time">Time Slots Available</div>
+                <ul class="time-slots">
+                    <li><button type="button" class="active">10:00 am</button></li>
+                    <li><button type="button" class="">11:00 am</button></li>
+                    <li><button type="button" class="">12:00 pm</button></li>
+                    <li><button type="button" class="disabled" disabled>01:00 pm</button></li>
+                    <li><button type="button" class="">02:00 pm</button></li>
+                    <li><button type="button" class="">03:00 pm</button></li>
+                    <li><button type="button" class="">04:00 pm</button></li>
+                    <li><button type="button" class="">05:00 pm</button></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-8">
+                <form action="">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="fName">First Name</label>
+                                <input type="text" class="form-control" name="fName" id="fName" value="Mohammad Faris">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="dateTime">Date/Time:</label>
+                                <input type="text" class="form-control" name="dateTime" id="dateTime" value="13/07/2022   -   04:00 pm">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" value="m.faris@techgrowthkw.com">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="phone">PhoneNo.</label>
+                                <input type="tel" class="form-control" name="phone" id="phone" value="+965 87340912">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="date">D.O.B</label>
+                                <input type="date" class="form-control" name="date" id="date">
+                                <small>*Minimum age should be 20 to book an appointment.</small>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="consultationType">Consultation Type :</label>
+                                <select class="form-control" name="consultationType" id="consultationType">
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="consultationAs">Consultation As :</label>
+                                <select class="form-control" name="consultationAs" id="consultationAs">
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="consultationWith">Consultation With :</label>
+                                <select class="form-control" name="consultationWith" id="consultationWith">
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="BusinessAccountName">Business Account Name on Social Media :</label>
+                                <input type="text" class="form-control" name="BusinessAccountName" id="BusinessAccountName" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="DateEstablishment">Date of Establishment :</label>
+                                <input type="text" class="form-control" name="DateEstablishment" id="DateEstablishment" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="NameCompany">Name of Company :</label>
+                                <input type="text" class="form-control" name="NameCompany" id="NameCompany" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="ReasonRequestingMeeting">Reason for Requesting a Meeting : </label>
+                                <textarea class="form-control" name="ReasonRequestingMeeting" id="ReasonRequestingMeeting" rows="5" placeholder="Type here"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Reason for Requesting a Meeting : </label>
+                                <div class="upload-btn-wrapper">
+                                    <button class="btn">Attach File</button>
+                                    <input type="file" name="myfile" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="Industry">Industry :</label>
+                                <input type="text" class="form-control" name="Industry" id="Industry" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="competitors">Are you aware of your competitors? If yes List their names.</label>
+                                <input type="text" class="form-control" name="competitors" id="competitors" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Reason for Requesting a Meeting : </label>
+                                <div class="upload-btn-wrapper">
+                                    <button class="btn">Attach File</button>
+                                    <input type="file" name="myfile" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Monthly Current Sales :</label>
+                                <select class="form-control" name="" >
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Age of the Institution / Company</label>
+                                <select class="form-control" name="" >
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Number of Employees :</label>
+                                <select class="form-control" name="" >
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Country :</label>
+                                <select class="form-control" name="" >
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Company Address :</label>
+                                <input type="text" class="form-control" name="" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Company Website :</label>
+                                <input type="text" class="form-control" name="" placeholder="Type here">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>Budget :</label>
+                                <select class="form-control" name="" >
+                                    <option value="" selected disabled>Choose</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label>How did you hear about us ?</label>
+                                <input type="text" class="form-control" name="" placeholder="Type here">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group mt-5">
+<!--                        <button type="submit" class="btn">Book Now</button>-->
+                        <a href="payment.html" class="btn">Book Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row footer-top">
+            <div class="col-12 col-lg-4">
+                <div class="footer-logo">
+                    <img src="../assets/images/logo-footer.svg" alt="WAY">
+                </div>
+                <p class="footer-text">
+                    Marketing & Management
+                    Consultancy
+                </p>
+                <a href="tel:+96522064611" class="footer-phone"><span>+965</span> 2206 4611</a>
+                <div class="ceo-consultant">
+                    <div>CEO & Consultant ( Athoub Altowaim )</div>
+                    <a href="mailto:a.altowaim@wayconsultants.co ">a.altowaim@wayconsultants.co </a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4">
+                <ul class="contact-menu">
+                    <li>
+                       <div class="contact-icon">
+                           <img src="../assets/images/Way-footer-location-icon.svg" alt="Location">
+                       </div>
+                        <div class="contact-info">
+                            <div class="contact-title">Location</div>
+                            <div class="contact-text">
+                                Dhow Tower, Kuwait City,
+                                Khaled Ibn Al Waleed St, Floor 28, Kuwait
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-icon">
+                            <img src="../assets/images/way-footer-clock-icon.svg" alt="Working Hours">
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-title">Working Hours</div>
+                            <div class="contact-text">
+                                9:00 AM – 5:00 PM
+                                ( Sunday – Thursday )
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+                <div class="contact-us-title">Contact Us</div>
+                <div class="contact-us-text">
+                    For Business Collaborations and Training Seminars
+                    <a href="mailto:contact@wayconsultants.co">contact@wayconsultants.co</a>
+                </div>
+                <div class="socials">
+                    <div class="socials">
+                        <a href="#" target="_blank"><span class="fa fa-instagram"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-facebook"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-linkedin"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="made-with">
+                Made with <i class="fa fa-heart px-1"></i> In <a href="https://www.techgrowthkw.com/">TechGrowth</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Book Now-->
+<div class="book-now-wrapper">
+    <a href="#" class="toggle-book">
+        <img src="../assets/images/arrow.svg" alt="Arrow">
+        <span>Book Now</span>
+    </a>
+    <div class="book-btns">
+        <button type="button" class="btn btn-book">Appointment</button>
+        <button type="button" class="btn btn-book">Packages</button>
+    </div>
+</div>
+<!--  Scripts-->
+<script src="../assets/js/jquery.min.js" ></script>
+<script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-40ix5a3dj6/qaC7tfz0Yr+p9fqWLzzAXiwxVLt9dw7UjQzGYw6rWRhFAnRapuQyK" crossorigin="anonymous"></script>
+<script src="../assets/js/jquery-ui.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+</script>
+</body>
+</html>

@@ -1,11 +1,18 @@
 body{
     direction: rtl;
     text-align: right;
+    font-family: 'GE SS Two' , 'Poppins', 'Beyond Infinity - Demo', 'iCiel Gotham' , Arial,sans-serif;
 }
 .owl-carousel{
     direction: ltr;
 }
 .owl-carousel .item{
+    direction: rtl;
+}
+#pinContainer{
+    direction: ltr;
+}
+#pinContainer .panel{
     direction: rtl;
 }
 .scrollIndicator{
@@ -48,26 +55,26 @@ body{
 }
 @keyframes W-animation {
     0%{
-        transform: rotate(-4deg) translateX(-100px);
+        transform: rotateY(180deg) rotateX(-4deg) translateX(100px);
     }
     100%{
-        transform: rotate(-4deg) translateX(0);
+        transform: rotateY(180deg) rotateX(-4deg) translateX(0);
     }
 }
 @keyframes A-animation {
     0%{
-        transform: rotate(1deg) translateX(200px);
+        transform: rotateY(180deg) rotateX(1deg) translateX(-200px);
     }
     100%{
-        transform: rotate(1deg) translateX(0);
+        transform: rotateY(180deg) rotateX(1deg) translateX(0);
     }
 }
 @keyframes Y-animation {
     0%{
-        transform: rotate(-12deg) translateX(-100px);
+        transform: rotateY(180deg) rotateX(-12deg) translateX(100px);
     }
     100%{
-        transform: rotate(-12deg) translateX(0);
+        transform: rotateY(180deg) rotateX(-12deg) translateX(0);
     }
 }
 /* Book Now */
@@ -103,6 +110,7 @@ body{
 section .read-more img{
     margin-left: 0;
     margin-right: 0.5vw;
+    transform: rotateY(180deg);
 }
 section .read-more:hover img{
     transform: translateX(-5px);
@@ -139,6 +147,11 @@ section .read-more:hover img{
     margin-left: 0;
     margin-right: 0.5vw;
 }
+.news-wrapper .news-slider .news-info {
+    right: auto;
+    left: 5vw;
+    transform: rotate(2deg);
+}
 .news-wrapper .news-slider .news-info .news-date img{
     margin-right: 0;
     margin-left: 4px;
@@ -147,6 +160,9 @@ section .read-more:hover img{
     margin-right: 0;
     margin-left: 4px;
 }
+.news-wrapper .news-slider-wrapper > img{
+    transform: rotateY(180deg);
+}
 .clients-wrapper .client-item:after{
     left: auto;
     right: 1.875vw  /* 36/19.2 */;
@@ -154,6 +170,10 @@ section .read-more:hover img{
 .clients-wrapper .client-item.light:after{
     left: 1.875vw  /* 36/19.2 */;
     right: auto;
+    transform: rotateY(180deg);
+}
+.clients-wrapper .client-item:after{
+    transform: none;
 }
 .clients-wrapper .client-item .client-title{
     right: auto;
@@ -171,14 +191,14 @@ section .read-more:hover img{
     right: -1.146vw  /* -22/19.2 */;
     left: auto;
 }
-.owl-carousel .owl-nav button.owl-next {
+/*.owl-carousel .owl-nav button.owl-next {
     right: auto;
     left: -5vw;
 }
 .owl-carousel .owl-nav button.owl-prev {
     left: auto;
     right: -5vw;
-}
+}*/
 footer ul.contact-menu li{
     padding-left: 0;
     padding-right: 35px;
@@ -269,6 +289,9 @@ footer ul.contact-menu li .contact-icon{
 .appointment-confirmation .thank-you span:after{
     right: auto;
     left: 0;
+}
+footer .footer-phone{
+    font-family: var(--font-english);
 }
 /* Responsive*/
 @media screen and (max-width: 991px) {
