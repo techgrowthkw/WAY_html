@@ -3173,6 +3173,10 @@ ul.packages-description li{
         font-size: 16px;
         line-height: 20px;
     }
+    .gallery-wrapper .gallery-item .video-info {
+        height: 32px;
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 767px) {
     .navbar .search-group{
